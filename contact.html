@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reroll Life</title>
+    <style>
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #1a1a1a; /* Darker background for an eerie effect */
+            color: #1e90ff; /* Blue color for the main text */
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            background-color: #111;
+            padding: 30px 30px;
+            color: white; /* No changes here */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+        }
+        .navbar a {
+            color: white; /* No changes here */
+            text-decoration: none;
+            margin: 0 20px;
+        }
+        .container {
+            flex: 1;
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #262626; /* Darker container for mystery */
+            border-radius: 10px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); /* Stronger shadow for eerie depth */
+            border: 2px solid #444; /* Slight border for a defined yet subtle separation */
+        }
+        h1 {
+            font-size: 32px;
+            color: #1e90ff; /* Blue color for headings */
+            text-shadow: 0 0 10px #5a5a5a; /* Light shadow for ghostly effect */
+        }
+        label {
+            font-size: 20px;
+            color: #1e90ff; /* Blue color to match the eerie tone */
+        }
+        .form-control {
+            background-color: #333; /* Darker input background */
+            color: #1e90ff; /* Blue text color for inputs */
+            border: 1px solid #555;
+            border-radius: 5px;
+        }
+        .form-control:focus {
+            outline: none;
+            box-shadow: 0 0 10px #1e90ff; /* Blue glow for focus effect */
+            border-color: #1e90ff; /* Match the focus glow */
+        }
+        .btn-primary {
+            background-color: #1e90ff; /* Blue color for buttons */
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+        }
+        .btn-primary:hover {
+            background-color: #104e8b; /* Darker shade of blue on hover */
+            transform: translateY(-2px); /* Slight lift on hover for an ethereal feel */
+        }
+        .footer {
+            background-color: #111;
+            color: white; /* No changes here */
+            text-align: center;
+            padding: 20px;
+            margin-top: auto; /* Ensures the footer stays at the bottom */
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="brand"></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Anonymous Contact</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Anonymous Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your alias">
+            </div>
+            <div class="form-group">
+                <label for="sacrifice">Sacrifice</label>
+                <input type="text" class="form-control" id="sacrifice" placeholder="What would you sacrifice for your wish?">
+            </div>
+            <div class="form-group">
+                <label for="wish">Wish</label>
+                <textarea class="form-control" id="wish" rows="3" placeholder="What do you wish for?"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="bitcoin">Bitcoin Payment</label>
+                <input type="text" class="form-control" id="bitcoin" placeholder="Your Bitcoin wallet address">
+            </div>
+            <div class="form-group">
+                <label for="family">How many family members you kidnapped?</label>
+                <input type="text" class="form-control" id="family" placeholder="Enter the number">
+            </div>
+            <div class="form-group">
+                <label for="houses">How many houses do you destroyed?</label>
+                <input type="text" class="form-control" id="houses" placeholder="Enter the number">
+            </div>
+            <div class="form-group">
+                <label for="nightmares">How many people you killed?</label>
+                <input type="text" class="form-control" id="nightmares" placeholder="Enter the number">
+            </div>
+            <div class="form-group">
+                <label for="secrets">Worse sins that no one else knows?</label>
+                <input type="text" class="form-control" id="secrets" placeholder="Enter the secrets">
+            </div>
+            <div class="form-group">
+                <label for="darkness">How often do you feel the urge to kill?</label>
+                <input type="text" class="form-control" id="darkness" placeholder="Enter your response">
+            </div>
+            <button type="submit" class="btn btn-primary">Queue</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy; 2700 System menu. All Universe rights reserved.
+    </div>
+</body>
+</html>
